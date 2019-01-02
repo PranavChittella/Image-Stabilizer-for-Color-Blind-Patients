@@ -2,17 +2,7 @@
 
 function [imageOut infoLost] = deuteranopiaSim(imageRGB)
 
-% This function takes the input image and creates a new output image that
-% simulates what a person suffering from Deuteranopia would see.
-% It converts the image from RGB (red, green, blue) to LMS (long, medium, 
-% short) color space and removes the medium (M) wavelength information that
-% corresponds to the patients missing "green" cones.
-%
-% The function also outputs a matrix containing the information that is
-% lost in this process, all of the medium wavelength information.
-%
-% LMS conversion matricies and processing algorith found at:
-% http://scien.stanford.edu/pages/labsite/2005/psych221/projects/05/ofidaner/conv_img.m
+
 
 [imageHeight imageWidth imageDepth] = size(imageRGB);
 imageLMS = zeros(size(imageRGB));
