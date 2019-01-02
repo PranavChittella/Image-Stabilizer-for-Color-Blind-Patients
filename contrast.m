@@ -1,6 +1,4 @@
-% William Woods
-% EE 368 Final Project
-% 6 June 2012
+
 
 function imageOut = contrast(imageRGB, scale)
 
